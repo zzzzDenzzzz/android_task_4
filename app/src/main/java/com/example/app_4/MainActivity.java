@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showTimePickerDialog() {
-
         @SuppressLint("SetTextI18n")
         TimePickerDialog timePickerDialog = new TimePickerDialog(MainActivity.this,
                 (view, hourOfDay, minuteOfHour) -> {
@@ -57,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showDatePickerDialog() {
-
         @SuppressLint("SetTextI18n")
         DatePickerDialog datePickerDialog = new DatePickerDialog(MainActivity.this,
                 (view, year, month, dayOfMonth) -> {
