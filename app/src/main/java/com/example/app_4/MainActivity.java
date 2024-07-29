@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
         @SuppressLint("SetTextI18n")
         DatePickerDialog datePickerDialog = new DatePickerDialog(MainActivity.this,
-                (view, year1, month1, dayOfMonth) -> {
+                (view, year, month, dayOfMonth) -> {
                     @SuppressLint("DefaultLocale")
-                    String selectedDate = String.format("%02d-%02d-%04d", dayOfMonth, month1 + 1, year1);
+                    String selectedDate = String.format("%02d-%02d-%04d", dayOfMonth, month + 1, year);
                     binding.dateTextView.setText(SELECTED_DATE + selectedDate);
                 },
                 LocalDateTime.now().getYear(),
